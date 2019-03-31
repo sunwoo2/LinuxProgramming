@@ -42,6 +42,7 @@ int main(){
     }
 
     printf("Thread joined\n");
+    sem_destroy(&bin_sem);
     exit(EXIT_SUCCESS);
 }
 
