@@ -20,7 +20,7 @@ int main(){
         }
         if(fork_result == 0){   // Child
             sprintf(buffer, "%d", file_pipes[0]);
-            (void)execl("pipe4", "pipe4", buffer, (char*)0);
+            (void)execl("pipe4_exec_data_consumer", "pipe4_exec_data_consumer", buffer, NULL);
             exit(EXIT_FAILURE);
         }else{                  // Parent
             data_processed = write(file_pipes[1], some_data, strlen(some_data));
