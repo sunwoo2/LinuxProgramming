@@ -35,12 +35,12 @@ int main(){
         // Fork to create a process for this client and perform a test to see whether you're the parent or the child
         if(fork() == 0){
             // If you're the child, you can now read/write to the client on 'client_sockfd'. The five-second delay is just for this demonstration
-        read(client_sockfd, &ch, 1);
-        sleep(5);
-        ch++;
-        write(client_sockfd, &ch, 1);
-        close(client_sockfd);
-        exit(0);
+            read(client_sockfd, &ch, 1);
+            sleep(5);
+            ch++;
+            write(client_sockfd, &ch, 1);
+            close(client_sockfd);
+            exit(0);
         }else
             close(client_sockfd);
     }
