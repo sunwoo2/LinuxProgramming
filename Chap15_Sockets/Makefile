@@ -9,7 +9,8 @@ all:
 	gcc -o getname      getname.c
 	gcc -o getdate      getdate.c
 	gcc -o server4      server4.c
+	gcc -o select       select.c
 
 clean:
 	rm -rf client1 server1 server_socket client2 server2 getname getdate \
-        client3 server3 server4
+        client3 server3 server4 select
