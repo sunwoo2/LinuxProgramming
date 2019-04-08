@@ -15,6 +15,10 @@ int main(){
 
     FD_ZERO(&inputs);
     FD_SET(0, &inputs);
+    // STD (standard streams)    \
+       stdin  - 0                \
+       stdout - 1                \
+       stderr - 2                
 
     // Wait for input on 'stdin' for a maximum of 2.5 seconds
     while(1){

@@ -26,7 +26,7 @@ int main(){
     // Connect your socket to the server's socket
     result = connect(sockfd, (struct sockaddr*)&address, len);
     if(result == -1){
-        perror("oops: client2");
+        perror("oops: client3");
         exit(1);
     }
 
